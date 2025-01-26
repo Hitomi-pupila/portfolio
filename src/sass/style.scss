@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-wrap: anywhere;
+    font-family: "Zen Kaku Gothic New", "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ul, li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0F1A45;
+  }
+
+  .l-container {
+    background-color: #0b9b8a;
+  }
+
+  .l-header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__item {
+        > a {
+            font-size: 16px;
+            font-weight: 700;
+            transition: opacity .3s;
+
+            &:hover {
+                opacity: .3;
+            }
+        }
+    }
+  }
+
+  .l-section {
+    margin-top: 40px;
+    padding: 40px;
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  h2 {
+    background-color: #efd96f;
+    color: #0F1A45;
+    padding-block: 20px;
+    padding-inline: 10px;
+  }
+
+  .m-table {
+    display: block;
+    padding-inline: 20px;
+    margin-top: 40px;
+    color: #fff;
+
+    tbody {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    tr {
+        display: flex;
+        text-align: left;
+    }
+
+    th {
+        flex-basis: 15%;
+    }
+
+    th,
+    td {
+        display: block;
+    }
+
+    .m-table {
+        margin-top: 0;
+        padding: 0;
+
+        th {
+            flex-basis: 30%;
+        }
+    }
+  }
