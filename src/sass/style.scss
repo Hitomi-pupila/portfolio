@@ -26,6 +26,7 @@
 
   .l-container {
     background-color: #0b9b8a;
+    padding-top: 100px;
 
     @media screen and (max-width:768px) {
       padding-top: 50px;
@@ -81,6 +82,7 @@
     font-size: 150px;
     font-weight: 700;
     color: #fff;
+    border-bottom: 1px #fff solid;
 
     @media screen and (max-width:768px) {
       font-size: 48px;
