@@ -26,35 +26,54 @@
 
   .l-container {
     background-color: #0b9b8a;
+
+    @media screen and (max-width:768px) {
+      padding-top: 50px;
+    }
   }
 
   .l-header {
-    height: 50px;
+    min-height: 50px;
     display: flex;
     justify-content: center;
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 50px;
+        gap: 0 50px;
+
+        @media screen and (max-width:768px) {
+          gap: 10px;
+          padding: 20px 10px;
+        }
     }
 
     &__item {
-        > a {
-            font-size: 16px;
-            font-weight: 700;
-            transition: opacity .3s;
+      @media screen and (max-width:768px) {
+        font-size: 1.2rem;
+      }
 
-            &:hover {
-                opacity: .3;
-            }
-        }
+      > a {
+          font-size: 16px;
+          font-weight: 700;
+          transition: opacity .3s;
+
+          &:hover {
+              opacity: .3;
+          }
+      }
     }
   }
 
   .l-section {
     margin-top: 40px;
     padding: 40px;
+
+    @media screen and (max-width:768px) {
+      margin-top: 20px;
+      padding: 20px;
+    }
   }
 
   h1 {
@@ -62,6 +81,11 @@
     font-size: 150px;
     font-weight: 700;
     color: #fff;
+
+    @media screen and (max-width:768px) {
+      font-size: 48px;
+      text-align: center;
+    }
   }
 
   h2 {
@@ -80,16 +104,19 @@
     tbody {
         display: flex;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 20px;
     }
 
     tr {
         display: flex;
         text-align: left;
+        flex-direction: column;
+        row-gap: 5px;
     }
 
     th {
         flex-basis: 15%;
+        color: #efd96f;
     }
 
     th,
